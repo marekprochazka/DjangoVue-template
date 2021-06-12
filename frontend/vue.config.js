@@ -3,8 +3,16 @@ module.exports = {
     outputDir: '../backend/static/dist',
     indexPath: '../../templates/base-vue.html', // relative to outputDir!
 
+    css: {
+        loaderOptions: {
+            sass: {
+                prependData: '@import "@/styles/_entry.scss";'
+            },
+        },
+    },
+
     chainWebpack: config => {
-        /*
+    /*
         The arrow function in writeToDisk(...) tells the dev server to write
         only index.html to the disk.
 

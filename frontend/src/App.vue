@@ -7,7 +7,6 @@
 </template>
 
 <style lang="scss">
-@import "styles/entry.scss";
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -22,7 +21,7 @@
 
   a {
     font-weight: bold;
-    color: #2c3e50;
+    color: $pink;
 
     &.router-link-exact-active {
       color: #42b983;
