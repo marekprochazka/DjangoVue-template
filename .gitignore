@@ -21,3 +21,9 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+
+venv
+__pycache__
+db.sqlite3
+.vscode
