@@ -1,9 +1,11 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
+    <router-link class="btn btn-primary" to="/">Home</router-link>
+    |
     <router-link to="/about">About</router-link>
   </div>
-  <router-view />
+  <h1>Ahoj</h1>
+  <router-view/>
 </template>
 
 <style lang="scss">
