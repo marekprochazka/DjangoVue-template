@@ -4,6 +4,13 @@ from django.views.generic import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', TemplateView.as_view(template_name='index.html'), name='index'),
-    path('<path:resource>', TemplateView.as_view(template_name='index.html'), name='index'),
+
 ]
+
+
+frontend_routes = [
+    path('', TemplateView.as_view(template_name='index.html'), name='index'),
+    path('<path:resource>', TemplateView.as_view(template_name='index.html'), name='index'),Ł
+]
+
+urlpatterns += frontend_routes
