@@ -2,6 +2,7 @@
 node_modules
 /dist
 
+.env
 
 # local env files
 .env.local
@@ -29,3 +30,6 @@ db.sqlite3
 .vscode
 
 base-vue.html
+
+.idea 
+.vscode
