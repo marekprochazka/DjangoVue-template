@@ -10,7 +10,7 @@ urlpatterns = [
 
 frontend_routes = [
     path('', TemplateView.as_view(template_name='index.html'), name='index'),
-    path('<path:resource>', TemplateView.as_view(template_name='index.html'), name='index'),Ł
+    path('<path:resource>', TemplateView.as_view(template_name='index.html'), name='index'),
 ]
 
 urlpatterns += frontend_routes
